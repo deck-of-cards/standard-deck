@@ -1,0 +1,79 @@
+@import 'inter/inter.css';
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #ddd;
+}
+
+card {
+  position: relative;
+  display: inline-block;
+  width: 5rem;
+  height: 7rem;
+  margin: .5rem;
+  background-color: #fff;
+  background-position: 50% 50%;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+card-bottomright {
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
+  transform: rotate(180deg);
+}
+
+card-topleft {
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+}
+
+.card-corner card-suit, .card-corner card-value {
+  width: 1rem;
+  text-align: center;
+  display: block;
+}
+
+card-value {
+  font-size: 0.875rem;
+  padding-top: .125rem;
+  font-weight: 600;
+  letter-spacing: -0.0625em; 
+}
+
+.card-corner card-suit {
+  margin-top: -.375rem;
+}
+
+.card-corner card-suit img {
+  height: 0.5625rem;
+}
+
+card-middle {
+  position: absolute;
+  left: 32.5%;
+  top: 20%;
+  width: 35%;
+  height: 60%;
+}
+
+card-middle card-suit {
+  position: absolute;
+}
+
+card-middle card-suit.ace img {
+  height: 1.625rem;
+}
+
+card-middle card-suit img {
+  height: .875rem;
+}
+
+card.joker card-value {
+  margin-left: -.1875rem;
+  font-size: .5rem;
+  font-weight: 600;
+  line-height: 1.0625;
+}
