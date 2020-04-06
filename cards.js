@@ -1,16 +1,16 @@
 const suitPos = getSuitPos();
 const suits = 'spade heart club diamond'.split(' ');
 const colors = '#333 #c22'.split(' ');
-const values = 'A 2 3 4 5 6 7 8 9 10 J Q K'.split(' ');
+const values = 'A 9 10 J Q K'.split(' ');
 
-for (let i = 0; i < 54; i++) {
+for (let i = 0; i < 25; i++) {
   createCard(i);
 }
 
 function createCard (index) {
-  const suit = suits[index / 13 | 0];
-  const value = index < 52 ? values[index % 13] : 'J O K E R';
-  const color = colors[(index / 13 | 0) % 2];
+  const suit = suits[index / 6 | 0];
+  const value = index < 24 ? values[index % 6] ;
+  const color = colors[(index / 6 | 0) % 2];
   const $card = document.createElement('card');
   const $topleft = document.createElement('card-topleft');
   const $bottomright = document.createElement('card-bottomright');
@@ -26,7 +26,7 @@ function createCard (index) {
     $parent.classList.add('card-corner');
     $parent.appendChild($value);
 
-    if (index < 52) {
+    if (index < 24) {
       const $suit = document.createElement('card-suit');
       $suit.innerHTML = `<img src="fa/${suit}.svg">`;
       $parent.appendChild($suit);
@@ -41,15 +41,15 @@ function createCard (index) {
     $card.style.backgroundImage = `url(graphics/${v}${s}.svg)`;
   }
 
-  if (index > 51) {
-    if (index === 53) {
+  if (index > 24) {
+    if (index === 24) {
       $card.style.color = colors[1];
     }
     $card.classList.add('joker');
     $card.style.backgroundImage = 'url(graphics/joker.svg)';
   }
 
-  index < 52 && suitPos[index % 13] && suitPos[index % 13].forEach(pos => {
+  index < 24 && suitPos[index % 6] && suitPos[index % 6].forEach(pos => {
     const $suit = document.createElement('card-suit');
     const [x, y, rotate] = pos;
 
@@ -58,7 +58,7 @@ function createCard (index) {
     $suit.style.top = `${50 + y * 50}%`;
     $suit.style.left = `${50 + x * 50}%`;
 
-    if (index % 13 === 0) {
+    if (index % 6 === 0) {
       $suit.classList.add('ace');
       $suit.style.transform = 'translate(-50%, -50%) rotate(15deg)';
     } else if (rotate) {
