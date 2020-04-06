@@ -2,7 +2,6 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  background-color: #ddd;
   margin: 0;
   font-size: 0;
 }
@@ -12,10 +11,13 @@ card {
   display: inline-block;
   width: 5rem;
   height: 7rem;
+  margin: .5rem;
   background-color: #fff;
   background-position: 50% 50%;
   background-size: 70%;
   background-repeat: no-repeat;
+  border-radius: .25rem;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
 
 card-bottomright {
@@ -44,7 +46,17 @@ card-value {
   letter-spacing: -0.0625em; 
 }
 
-.card-corner card-suit {
+card-back {
+  position: absolute;
+  top: .25rem;
+  left: .25rem;
+  right: .25rem;
+  bottom: .25rem;
+  image-rendering: crisp-edges;
+  border-radius: .125rem;
+  background-image: url(graphics/bg.png);
+  background-position: 50% 50%;
+  background-size: 0.5rem 0.5rem;
 }
 
 .card-corner card-suit img {

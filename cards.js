@@ -15,9 +15,12 @@ function createCard (index) {
   const $topleft = document.createElement('card-topleft');
   const $bottomright = document.createElement('card-bottomright');
   const $middle = document.createElement('card-middle');
+  const $back = document.createElement('card-back');
 
   $card.appendChild($middle);
+  $card.appendChild($back);
 
+  $back.style.opacity = 0;
   $card.style.color = color;
 
   [$topleft, $bottomright].forEach($parent => {
