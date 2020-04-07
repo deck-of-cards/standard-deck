@@ -1,18 +1,13 @@
 {
-  "name": "standard-deck",
+  "name": "@deck-of-cards/standard-deck",
   "version": "1.0.0",
   "description": "Standard deck graphics for [deck.of.cards](https://deck.of.cards)",
   "main": "index.js",
   "scripts": {
-    "start": "node puppeteer",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Juha Lindstedt",
   "license": "ISC",
-  "devDependencies": {
-    "puppeteer": "^2.1.1"
-  },
-  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/deck-of-cards/standard-deck.git"
