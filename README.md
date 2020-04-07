@@ -1,5 +1,5 @@
-# generate-cards
-Generate card graphics for [deck.of.cards](https://deck.of.cards) (work in progress!)
+# @deck-of-cards/standard-deck
+Standard deck graphics for [deck.of.cards](https://deck.of.cards)
 
 ## Attributions
 - [Suit icons](https://github.com/deck-of-cards/generate-cards/tree/master/fa) are from Font Awesome Pro, so notice it's [license](https://fontawesome.com/pro#pro-license-explained)!
