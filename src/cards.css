@@ -1,66 +1,71 @@
-@import 'inter/inter.css';
+@import '../inter/inter.css';
 
 body {
   font-family: 'Inter', sans-serif;
   margin: 0;
   font-size: 0;
+  background-color: #ddd;
 }
 
 card {
   position: relative;
   display: inline-block;
-  width: 5rem;
-  height: 7rem;
-  margin: .5rem;
+  width: 100px;
+  height: 140px;
+  margin: 8px;
   background-color: #fff;
   background-position: 50% 50%;
   background-size: 70%;
   background-repeat: no-repeat;
-  border-radius: .25rem;
+  border-radius: 4px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
 }
 
 card-bottomright {
   position: absolute;
-  bottom: 0rem;
-  right: 0rem;
+  bottom: 0;
+  right: 0;
   transform: rotate(180deg);
 }
 
 card-topleft {
   position: absolute;
-  top: 0rem;
-  left: 0rem;
+  top: 0;
+  left: 0;
 }
 
-.card-corner card-suit, .card-corner card-value {
-  width: 1rem;
+.card-corner card-suit, .card-corner card-rank {
+  width: 18px;
   text-align: center;
   display: block;
 }
 
-card-value {
-  font-size: 0.875rem;
-  padding-top: .125rem;
+.card-corner card-suit {
+  margin-left: 0.5px;
+}
+
+card-rank {
+  font-size: 16px;
+  padding-top: 2px;
   font-weight: 600;
-  letter-spacing: -0.0625em; 
+  letter-spacing: -1.75px; 
 }
 
 card-back {
   position: absolute;
-  top: .25rem;
-  left: .25rem;
-  right: .25rem;
-  bottom: .25rem;
+  top: 4px;
+  left: 4px;
+  right: 4px;
+  bottom: 4px;
   image-rendering: crisp-edges;
-  border-radius: .125rem;
-  background-image: url(graphics/bg.png);
+  border-radius: 2px;
+  background-image: url(../graphics/bg.png);
   background-position: 50% 50%;
-  background-size: 0.5rem 0.5rem;
+  background-size: 8px 8px;
 }
 
 .card-corner card-suit img {
-  height: 0.5625rem;
+  height: 12px;
 }
 
 card-middle {
@@ -76,16 +81,17 @@ card-middle card-suit {
 }
 
 card-middle card-suit.ace img {
-  height: 1.625rem;
+  height: 30px;
 }
 
 card-middle card-suit img {
-  height: .875rem;
+  height: 20px;
 }
 
-card.joker card-value {
-  margin-left: -.1875rem;
-  font-size: .5rem;
+card.joker card-rank {
+  margin-left: -2px;
+  margin-top: 2px;
+  font-size: 10px;
   font-weight: 600;
   line-height: 1.0625;
 }

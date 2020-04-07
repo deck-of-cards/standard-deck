@@ -3,15 +3,17 @@ const puppeteer = require('puppeteer');
 (async () => {
   const browser = await puppeteer.launch();
   const page = await browser.newPage();
-  await page.goto(`file://${__dirname}/cards.html`);
+  await page.goto(`file://${__dirname}/src/cards.html`);
 
   await page.setViewport({
-    width: 84,
-    height: 116,
+    width: 104,
+    height: 144,
     deviceScaleFactor: 4
   });
 
   const cardsCount = await page.evaluate(() => {
+    document.body.style.background = 'transparent';
+
     const cards = document.querySelectorAll('card');
 
     for (let i = 0; i < cards.length; i++) {
@@ -39,8 +41,8 @@ const puppeteer = require('puppeteer');
     card.querySelector('card-back').style.opacity = '';
   });
 
-  await page.screenshot({ path: 'dist/bg.png', omitBackground: true });
-  console.log('Rendered dist/bg.png');
+  await page.screenshot({ path: 'dist/back.png', omitBackground: true });
+  console.log('Rendered dist/back.png');
 
   await page.evaluate(() => {
     const cards = document.querySelectorAll('card');
@@ -61,8 +63,8 @@ const puppeteer = require('puppeteer');
 
       card.style.opacity = '';
     }, i);
-    await page.screenshot({ path: `dist/${i}.png`, omitBackground: true });
-    console.log(`rendered dist/${i}.png`);
+    await page.screenshot({ path: `dist/front-${i}.png`, omitBackground: true });
+    console.log(`rendered dist/front-${i}.png`);
     await page.evaluate((i) => {
       const cards = document.querySelectorAll('card');
       const card = cards[i];
