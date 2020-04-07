@@ -1,5 +1,5 @@
 {
-  "name": "generate-cards",
+  "name": "@deck-of-cards/standard-deck",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
