@@ -16,12 +16,14 @@ for (let i = 0; i < cards.length; i++) {
   const suit = getSuit(i);
   const color = i < 52 ? colors[(i / 13 | 0) % 2] : colors[i % 2];
   const hexColor = hexColors[color];
+  const value = i % 13;
   const rank = i < 52 ? ranks[i % 13] : ranks[13];
   const printedRank = i < 52 ? printedRanks[i % 13] : printedRanks[13];
 
   const card = {
     i,
     suit,
+    value,
     color,
     hexColor,
     rank,
@@ -67,7 +69,7 @@ function createCard (card) {
 
   if (i % 13 > 9) {
     const v = rank;
-    const s = suit.toLowerCase()[0];
+    const s = suit[0];
     $card.style.backgroundImage = `url(../graphics/${v}${s}.svg)`;
   }
 

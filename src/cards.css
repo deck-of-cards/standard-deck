@@ -7,51 +7,48 @@ body {
   background-color: #ddd;
 }
 
-card {
+.card {
   position: relative;
   display: inline-block;
   width: 100px;
   height: 140px;
   margin: 8px;
   background-color: #fff;
-  background-position: 50% 50%;
-  background-size: 70%;
-  background-repeat: no-repeat;
-  border-radius: 4px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+  border-radius: 6px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .05);
 }
 
-card-bottomright {
+.card-bottomright {
   position: absolute;
   bottom: 0;
   right: 0;
   transform: rotate(180deg);
 }
 
-card-topleft {
+.card-topleft {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.card-corner card-suit, .card-corner card-rank {
+.card-corner .card-suit, .card-corner .card-rank {
   width: 18px;
   text-align: center;
   display: block;
 }
 
-.card-corner card-suit {
+.card-corner .card-suit {
   margin-left: 0.5px;
 }
 
-card-rank {
+.card-rank {
   font-size: 16px;
   padding-top: 2px;
   font-weight: 600;
   letter-spacing: -1.75px; 
 }
 
-card-back {
+.card-back {
   position: absolute;
   top: 4px;
   left: 4px;
@@ -64,11 +61,11 @@ card-back {
   background-size: 8px 8px;
 }
 
-.card-corner card-suit img {
+.card-corner .card-suit img {
   height: 12px;
 }
 
-card-middle {
+.card-middle {
   position: absolute;
   left: 32.5%;
   top: 20%;
@@ -76,19 +73,34 @@ card-middle {
   height: 60%;
 }
 
-card-middle card-suit {
+.card-royal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 75%;
+}
+
+.card-joker .card-royal {
+  background-position: 60% 50%;
+}
+
+.card-middle .card-suit {
   position: absolute;
 }
 
-card-middle card-suit.ace img {
+.card-a .card-middle .card-suit img {
   height: 30px;
 }
 
-card-middle card-suit img {
+.card-middle .card-suit img {
   height: 20px;
 }
 
-card.joker card-rank {
+.card-joker .card-rank {
   margin-left: -2px;
   margin-top: 2px;
   font-size: 10px;

@@ -4,12 +4,14 @@
   "description": "Standard deck graphics for [deck.of.cards](https://deck.of.cards)",
   "main": "index.js",
   "scripts": {
-    "start": "node puppeteer",
+    "start": "node generate-cards && node render-cards",
+    "version": "node syncversion.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Juha Lindstedt",
   "license": "ISC",
   "devDependencies": {
+    "pug": "^2.0.4",
     "puppeteer": "^2.1.1"
   },
   "dependencies": {},
