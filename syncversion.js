@@ -1,8 +1,8 @@
 const fs = require('fs');
 
-const package = require('./package.json');
-const distPackage = require('./dist/package.json');
+const pkg = require('./package.json');
+const distPkg = require('./dist/package.json');
 
-distPackage.version = package.version;
+distPkg.version = pkg.version;
 
-fs.writeFileSync('./dist/package.json', JSON.stringify(distPackage, null, '  '));
+fs.writeFileSync('./dist/package.json', JSON.stringify(distPkg, null, '  '));
