@@ -7,8 +7,8 @@ for (let i = 0; i < front.length; i++) {
 }
 
 export const standardDeck = {
-  width: 102,
-  height: 144,
+  width: 100,
+  height: 140,
   back: 'img/back.png',
   front,
   View: StandardCard

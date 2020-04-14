@@ -6,8 +6,8 @@ const puppeteer = require('puppeteer');
   await page.goto(`file://${__dirname}/src/cards.html`);
 
   await page.setViewport({
-    width: 102,
-    height: 144,
+    width: 100,
+    height: 140,
     deviceScaleFactor: 4
   });
 
@@ -22,8 +22,8 @@ const puppeteer = require('puppeteer');
       card.style.opacity = 0;
       card.style.margin = 0;
       card.style.position = 'absolute';
-      card.style.left = '1px';
-      card.style.top = '2px';
+      card.style.left = 0;
+      card.style.top = 0;
     }
 
     return cards.length;

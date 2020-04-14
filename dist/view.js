@@ -1,10 +1,16 @@
 export class StandardCard {
   constructor ({ game }) {
     this.game = game;
-    this.el = document.createElement('img');
+    this.el = document.createElement('div');
     this.el.draggable = false;
     this.el.style.touchAction = 'none';
     this.el.style.position = 'absolute';
+    this.el.style.borderRadius = '5px';
+    this.el.style.boxShadow = '0px 1px 2px rgba(0, 0, 0, .05)';
+    this.el.style.backgroundColor = '#fff';
+    this.el.style.backgroundRepeat = 'no-repeat';
+    this.el.style.backgroundSize = 'contain';
+    this.el.style.backgroundPosition = '50% 50%';
   }
 
   update (card) {
@@ -19,13 +25,13 @@ export class StandardCard {
     const transform = `translate(${Math.round(x)}px, ${Math.round(y)}px)`;
 
     if (src !== this.src) {
-      this.el.src = src;
+      this.el.style.backgroundImage = `url(${src})`;
       this.src = src;
     }
 
     if (width !== this.width || height !== this.height) {
-      this.el.width = width;
-      this.el.height = height;
+      this.el.style.width = width + 'px';
+      this.el.style.height = height + 'px';
       this.el.style.marginLeft = -width / 2 + 'px';
       this.el.style.marginTop = -height / 2 + 'px';
       this.width = this.width;
