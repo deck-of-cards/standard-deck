@@ -1,15 +1,17 @@
-import { StandardCard } from './view.js';
+export const deck = {
+  type: 'Deck',
+  style: 'standard',
+  createCards (deck, { Card }) {
+    const count = 54;
 
-const front = new Array(54);
+    for (let i = 0; i < count; i++) {
+      const card = new Card({
+        x: -i / 4,
+        y: -i / 4,
+        i: count - i - 1
+      });
 
-for (let i = 0; i < front.length; i++) {
-  front[i] = `img/front-${i}.png`;
-}
-
-export const standardDeck = {
-  width: 100,
-  height: 140,
-  back: 'img/back.png',
-  front,
-  View: StandardCard
+      deck.add(card);
+    }
+  }
 };

@@ -36,7 +36,7 @@ const puppeteer = require('puppeteer');
 
       card.style.opacity = '';
     }, i);
-    const path = i > 0 ? `dist/front-${i - 1}.png` : 'dist/back.png';
+    const path = i > 0 ? `dist/standard-deck/front-${i - 1}.png` : 'dist/standard-deck/back.png';
     await page.screenshot({ path, omitBackground: true });
     console.log(`rendered ${path}`);
     await page.evaluate((i) => {
