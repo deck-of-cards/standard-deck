@@ -15,9 +15,6 @@ export const standardDeck = {
     el.style.overflow = 'hidden';
     el.style.willChange = 'transform';
 
-    el.addEventListener('mousedown', this);
-    el.addEventListener('touchstart', this);
-
     return el;
   },
   render () {
