@@ -1,26 +1,62 @@
 {
-  "name": "standard-deck",
-  "version": "1.0.0",
-  "description": "Standard deck graphics for [deck.of.cards](https://deck.of.cards)",
-  "main": "index.js",
+  "name": "my-react-library-test-project",
+  "main": "dist/PokerPlayingCards.js",
+  "style": "dist/assets/css/styles.css",
+  "files": [
+    "dist"
+  ],
+  "version": "0.1.14",
+  "private": false,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "web-vitals": "^2.1.4"
+  },
   "scripts": {
-    "start": "node generate-cards && node render-cards",
-    "version": "node syncversion.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start",
+    "og-build": "react-scripts build",
+    "build": "rollup -c",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "author": "Juha Lindstedt",
-  "license": "ISC",
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
   "devDependencies": {
-    "pug": "^2.0.4",
-    "puppeteer": "^2.1.1"
+    "@babel/core": "^7.23.6",
+    "@babel/preset-env": "^7.23.6",
+    "@babel/preset-react": "^7.23.3",
+    "@svgr/rollup": "^8.1.0",
+    "rollup": "^2.79.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "rollup-plugin-url": "^3.0.1"
   },
-  "dependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/deck-of-cards/standard-deck.git"
-  },
-  "bugs": {
-    "url": "https://github.com/deck-of-cards/standard-deck/issues"
-  },
-  "homepage": "https://github.com/deck-of-cards/standard-deck#readme"
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
