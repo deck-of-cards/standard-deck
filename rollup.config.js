@@ -39,7 +39,7 @@ export default {
             flatten: false,
         }),
         copy({
-            targets: [{ src: 'src/assets/**/*.jpg', dest: 'dist/' }],
+            targets: [{ src: 'src/assets/**/*.png', dest: 'dist/' }],
             flatten: false,
         }),
         url({
