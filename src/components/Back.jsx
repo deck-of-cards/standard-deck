@@ -3,6 +3,7 @@ import React from 'react';
 import backImagePath from './assets/graphics/bg.png';
 import styles from './assets/css/styles.css';
 
+
 export const Back = () => {
 
   const backStyle = {

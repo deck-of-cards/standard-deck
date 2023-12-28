@@ -1,4 +1,3 @@
-// rollup.config.js
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
@@ -6,6 +5,7 @@ import postcss from 'rollup-plugin-postcss';
 import svgr from '@svgr/rollup';
 import copy from 'rollup-plugin-copy';
 import url from 'rollup-plugin-url';
+import modifyImports from './rollup-plugin-modify-imports';
 
 export default {
     input: 'src/PokerPlayingCards.jsx',
@@ -17,15 +17,13 @@ export default {
         resolve(),
         commonjs(),
         postcss({
-            // extract: true, // Extract CSS to separate file
-            modules: true, // Enable CSS modules if needed
-            // minimize: true, // Minify the CSS
+            modules: true,
         }),
         babel({
             exclude: 'node_modules/**',
             presets: ['@babel/preset-env', '@babel/preset-react'],
         }),
-        svgr(), // Handle SVG files
+        svgr(),
         copy({
             targets: [{ src: 'src/assets/**/*.woff', dest: 'dist/' }],
             flatten: false,
@@ -44,8 +42,9 @@ export default {
         }),
         url({
             include: ['**/*.png'],
-            limit: Infinity, // Embed all images as data URIs
+            limit: Infinity,
             emitFiles: true,
-        })
-    ]
+        }),
+        modifyImports(),
+    ],
 };

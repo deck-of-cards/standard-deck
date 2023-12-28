@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './assets/css/styles.css';
+
 import * as Constants from './Constants.jsx';
 
 export const SuitCard = ({ suit, value, style, suitCardStyle }) => {
