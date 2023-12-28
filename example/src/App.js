@@ -9,6 +9,7 @@ import { Joker } from 'standard-deck-react';
 import './style.css';
 import { ASuit } from 'standard-deck-react';
 import { getCard } from 'standard-deck-react';
+import { FullDeck } from 'standard-deck-react';
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
       {getCard("jc")}
       {getCard("12s")}
       {getCard("kh")}
+      <FullDeck />
     </Fragment>
   );
 }

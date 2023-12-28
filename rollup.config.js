@@ -41,6 +41,10 @@ export default {
             targets: [{ src: 'src/assets/**/*.png', dest: 'dist/' }],
             flatten: false,
         }),
+        copy({
+            targets: [{ src: 'src/assets/**/*.json', dest: 'dist/' }],
+            flatten: false,
+        }),
         url({
             include: ['**/*.png'],
             limit: Infinity,

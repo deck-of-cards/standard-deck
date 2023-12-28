@@ -3523,7 +3523,6 @@ function ASuit(_ref) {
 
 function getCard(cardString) {
   cardString = cardString.toLowerCase();
-  console.log("cardString->", cardString);
   if (cardString.length < 2 || cardString.length > 3) return undefined;
   let value, suit;
   if (cardString.length == 2) {
@@ -3552,8 +3551,6 @@ function getCard(cardString) {
         break;
     }
   } else value = Number(value);
-  console.log("value->", value);
-  console.log("suit->", suit);
   if (validValueAndSuit(value, suit)) {
     switch (suit) {
       case 'h':
@@ -3569,9 +3566,6 @@ function getCard(cardString) {
         suit = "diamond";
         break;
     }
-    console.log("both valid!");
-    console.log("value->", value);
-    console.log("suit->", suit);
     switch (value) {
       case 1:
         return /*#__PURE__*/React.createElement(Ace, {
@@ -3626,7 +3620,6 @@ function getCard(cardString) {
           suit: suit
         });
       case 13:
-        console.log("we gonna return king!");
         return /*#__PURE__*/React.createElement(King, {
           suit: suit
         });
@@ -3639,12 +3632,26 @@ function validValueAndSuit(value, suit) {
   return true;
 }
 
+const newDeckOrder = require('./assets/data/new.deck.order.json');
+function FullDeck(_ref) {
+  let {
+    order = newDeckOrder
+  } = _ref;
+  console.log("order->", order);
+  const cardElements = order.map(card => {
+    return getCard(card);
+  });
+  console.log("cardElements->", cardElements);
+  return /*#__PURE__*/React.createElement(React.Fragment, null, cardElements);
+}
+
 exports.ASuit = ASuit;
 exports.Ace = Ace;
 exports.Back = Back;
 exports.Eight = Eight;
 exports.Five = Five;
 exports.Four = Four;
+exports.FullDeck = FullDeck;
 exports.Jack = Jack;
 exports.Joker = Joker;
 exports.King = King;
