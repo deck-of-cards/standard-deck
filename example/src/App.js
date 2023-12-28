@@ -3,15 +3,6 @@ import { Ace } from 'standard-deck-react';
 import { Two } from 'standard-deck-react';
 import { Three } from 'standard-deck-react';
 import { Four } from 'standard-deck-react';
-import { Five } from 'standard-deck-react';
-import { Six } from 'standard-deck-react';
-import { Seven } from 'standard-deck-react';
-import { Eight } from 'standard-deck-react';
-import { Nine } from 'standard-deck-react';
-import { Ten } from 'standard-deck-react';
-import { Jack } from 'standard-deck-react';
-import { Queen } from 'standard-deck-react';
-import { King } from 'standard-deck-react';
 import { Back } from 'standard-deck-react';
 import { Joker } from 'standard-deck-react';
 
@@ -23,22 +14,25 @@ function App() {
   return (
     <Fragment>
       <Ace suit="club" />
-      <Two suit="spade" />
-      <Three suit="heart" />
-      <Four suit="spade" />
-      <Five suit="heart" />
-      <Six suit="heart" />
-      <Seven suit="spade" />
-      <Eight suit="club" />
-      <Nine suit="spade" />
-      <Ten suit="spade" />
-      <Jack suit="heart" />
-      <Queen suit="club" />
-      <King suit="spade" />
+      <Two suit="heart" />
+      <Three suit="spade" />
+      <Four suit="diamond" />
       <Back />
       <Joker />
       <ASuit suit="spade" />
-      {getCard("ah")}
+      {getCard("ad")}
+      {getCard("2c")}
+      {getCard("03d")}
+      {getCard("4s")}
+      {getCard("05h")}
+      {getCard("6s")}
+      {getCard("7c")}
+      {getCard("08d")}
+      {getCard("9h")}
+      {getCard("10s")}
+      {getCard("jc")}
+      {getCard("12s")}
+      {getCard("kh")}
     </Fragment>
   );
 }
