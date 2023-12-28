@@ -17,8 +17,6 @@ import { King } from '../components/King.jsx';
 export function getCard(cardString) {
     cardString = cardString.toLowerCase();
 
-    console.log("cardString->", cardString);
-
     if (cardString.length < 2 || cardString.length > 3) return undefined;
     let value, suit;
 
@@ -51,9 +49,6 @@ export function getCard(cardString) {
     }
     else value = Number(value);
 
-    console.log("value->", value);
-    console.log("suit->", suit);
-
     if (validValueAndSuit(value, suit)) {
         switch (suit) {
             case 'h':
@@ -69,9 +64,6 @@ export function getCard(cardString) {
                 suit = "diamond";
                 break;
         }
-        console.log("both valid!");
-        console.log("value->", value);
-        console.log("suit->", suit);
 
         switch (value) {
             case 1:
@@ -101,7 +93,6 @@ export function getCard(cardString) {
             case 12:
                 return <Queen suit={suit} />
             case 13:
-                console.log("we gonna return king!");
                 return <King suit={suit} />
         }
     }
