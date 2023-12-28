@@ -16,6 +16,8 @@ import { Back } from 'standard-deck-react';
 import { Joker } from 'standard-deck-react';
 
 import './style.css';
+import { ASuit } from 'standard-deck-react';
+import { getCard } from 'standard-deck-react';
 
 function App() {
   return (
@@ -35,6 +37,8 @@ function App() {
       <King suit="spade" />
       <Back />
       <Joker />
+      <ASuit suit="spade" />
+      {getCard("ah")}
     </Fragment>
   );
 }

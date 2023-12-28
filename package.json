@@ -1,6 +1,6 @@
 {
   "name": "standard-deck-react",
-  "main": "dist/PokerPlayingCards.js",
+  "main": "dist/index.js",
   "style": "dist/assets/css/styles.css",
   "files": [
     "dist"
@@ -8,6 +8,7 @@
   "version": "0.1.16",
   "private": false,
   "dependencies": {
+    "@rollup/plugin-url": "^8.0.2",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -46,6 +47,9 @@
     "@babel/preset-env": "^7.23.6",
     "@babel/preset-react": "^7.23.3",
     "@rollup/plugin-alias": "^5.1.0",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
     "@svgr/rollup": "^8.1.0",
     "rollup": "^2.79.1",
     "rollup-plugin-babel": "^4.4.0",

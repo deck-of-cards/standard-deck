@@ -13,5 +13,8 @@ import { Ten } from './components/Ten.jsx';
 import { Jack} from './components/Jack.jsx';
 import { Queen } from './components/Queen.jsx';
 import { King } from './components/King.jsx';
+import { ASuit } from './components/ASuit.jsx';
 
-export { Back, Joker, Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King};
+import { getCard } from './functions/getCard.jsx';
+
+export { Back, Joker, Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King, ASuit, getCard};

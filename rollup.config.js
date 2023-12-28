@@ -1,16 +1,16 @@
-import babel from 'rollup-plugin-babel';
-import resolve from 'rollup-plugin-node-resolve';
-import commonjs from 'rollup-plugin-commonjs';
+import babel from '@rollup/plugin-babel';
+import resolve from '@rollup/plugin-node-resolve';
+import commonjs from '@rollup/plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
 import svgr from '@svgr/rollup';
 import copy from 'rollup-plugin-copy';
-import url from 'rollup-plugin-url';
+import url from '@rollup/plugin-url';
 import modifyImports from './rollup-plugin-modify-imports';
 
 export default {
-    input: 'src/PokerPlayingCards.jsx',
+    input: 'src/index.jsx',
     output: {
-        file: 'dist/PokerPlayingCards.js',
+        file: 'dist/index.js',
         format: 'cjs',
     },
     plugins: [
@@ -22,6 +22,7 @@ export default {
         babel({
             exclude: 'node_modules/**',
             presets: ['@babel/preset-env', '@babel/preset-react'],
+            babelHelpers: 'bundled',
         }),
         svgr(),
         copy({
