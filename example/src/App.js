@@ -1,19 +1,19 @@
 import { Fragment } from 'react';
-import { Ace } from 'my-react-library-test-project';
-import { Two } from 'my-react-library-test-project';
-import { Three } from 'my-react-library-test-project';
-import { Four } from 'my-react-library-test-project';
-import { Five } from 'my-react-library-test-project';
-import { Six } from 'my-react-library-test-project';
-import { Seven } from 'my-react-library-test-project';
-import { Eight } from 'my-react-library-test-project';
-import { Nine } from 'my-react-library-test-project';
-import { Ten } from 'my-react-library-test-project';
-import { Jack } from 'my-react-library-test-project';
-import { Queen } from 'my-react-library-test-project';
-import { King } from 'my-react-library-test-project';
-import { Back } from 'my-react-library-test-project';
-import { Joker } from 'my-react-library-test-project';
+import { Ace } from 'standard-deck-react';
+import { Two } from 'standard-deck-react';
+import { Three } from 'standard-deck-react';
+import { Four } from 'standard-deck-react';
+import { Five } from 'standard-deck-react';
+import { Six } from 'standard-deck-react';
+import { Seven } from 'standard-deck-react';
+import { Eight } from 'standard-deck-react';
+import { Nine } from 'standard-deck-react';
+import { Ten } from 'standard-deck-react';
+import { Jack } from 'standard-deck-react';
+import { Queen } from 'standard-deck-react';
+import { King } from 'standard-deck-react';
+import { Back } from 'standard-deck-react';
+import { Joker } from 'standard-deck-react';
 
 import './style.css';
 

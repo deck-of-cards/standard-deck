@@ -1,11 +1,11 @@
 {
-  "name": "my-react-library-test-project",
+  "name": "standard-deck-react",
   "main": "dist/PokerPlayingCards.js",
   "style": "dist/assets/css/styles.css",
   "files": [
     "dist"
   ],
-  "version": "0.1.14",
+  "version": "0.1.15",
   "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
