@@ -82,9 +82,9 @@ export const HSFMFR180 = {
 export const color333 = { color: '#333' };
 
 export const suitImagePaths = {
-    club: require('./assets/fa/club.svg').default,
-    heart: require('./assets/fa/heart.svg').default,
-    spade: require('./assets/fa/spade.svg').default,
-    diamond: require('./assets/fa/diamond.svg').default,
+    club: require('./assets/graphics/club.svg').default,
+    heart: require('./assets/graphics/heart.svg').default,
+    spade: require('./assets/graphics/spade.svg').default,
+    diamond: require('./assets/graphics/diamond.svg').default,
     // Add more suits as needed
   };

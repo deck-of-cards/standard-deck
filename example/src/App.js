@@ -14,13 +14,16 @@ import { FullDeck } from 'standard-deck-react';
 function App() {
   return (
     <Fragment>
+      <h3> Some cards</h3>
       <Ace suit="club" />
       <Two suit="heart" />
       <Three suit="spade" />
       <Four suit="diamond" />
       <Back />
       <Joker />
+      <h3> A whole suit</h3>
       <ASuit suit="spade" />
+      <h3> Other cards obtained via 'getCard()'</h3>
       {getCard("ad")}
       {getCard("2c")}
       {getCard("03d")}
@@ -34,6 +37,7 @@ function App() {
       {getCard("jc")}
       {getCard("12s")}
       {getCard("kh")}
+      <h3> The full deck!</h3>
       <FullDeck />
     </Fragment>
   );

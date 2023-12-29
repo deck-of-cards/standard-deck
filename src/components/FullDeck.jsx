@@ -6,8 +6,6 @@ import { getCard } from '../functions/getCard.jsx';
 
 export function FullDeck({ order = newDeckOrder }) {
 
-    console.log("order->", order);
-
     const cardElements = order.map(card => {
         return getCard(card);
     });
