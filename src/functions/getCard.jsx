@@ -13,6 +13,7 @@ import { Ten } from '../components/Ten.jsx';
 import { Jack } from '../components/Jack.jsx';
 import { Queen } from '../components/Queen.jsx';
 import { King } from '../components/King.jsx';
+import { generateUUID } from '../functions/getUUID.jsx';
 
 export function getCard(cardString) {
     cardString = cardString.toLowerCase();
@@ -67,33 +68,33 @@ export function getCard(cardString) {
 
         switch (value) {
             case 1:
-                return <Ace suit={suit} />
+                return <Ace key={generateUUID()} suit={suit} />
             case 2:
-                return <Two suit={suit} />
+                return <Two key={generateUUID()} suit={suit} />
             case 3:
-                return <Three suit={suit} />
+                return <Three key={generateUUID()} suit={suit} />
             case 3:
-                return <Three suit={suit} />
+                return <Three key={generateUUID()} suit={suit} />
             case 4:
-                return <Four suit={suit} />
+                return <Four key={generateUUID()} suit={suit} />
             case 5:
-                return <Five suit={suit} />
+                return <Five key={generateUUID()} suit={suit} />
             case 6:
-                return <Six suit={suit} />
+                return <Six key={generateUUID()} suit={suit} />
             case 7:
-                return <Seven suit={suit} />
+                return <Seven key={generateUUID()} suit={suit} />
             case 8:
-                return <Eight suit={suit} />
+                return <Eight key={generateUUID()} suit={suit} />
             case 9:
-                return <Nine suit={suit} />
+                return <Nine key={generateUUID()} suit={suit} />
             case 10:
-                return <Ten suit={suit} />
+                return <Ten key={generateUUID()} suit={suit} />
             case 11:
-                return <Jack suit={suit} />
+                return <Jack key={generateUUID()} suit={suit} />
             case 12:
-                return <Queen suit={suit} />
+                return <Queen key={generateUUID()} suit={suit} />
             case 13:
-                return <King suit={suit} />
+                return <King key={generateUUID()} suit={suit} />
         }
     }
 }

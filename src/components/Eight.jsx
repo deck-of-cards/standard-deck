@@ -9,7 +9,7 @@ export const Eight = ({ suit }) => {
     const suitImagePath = Constants.suitImagePaths[suit];
 
     return (
-        <BaseCard suit={suit} value={"8"} style={Constants.color333}>
+        <BaseCard suit={suit}  value={"8"} style={Constants.color333}>
             <div className={styles['card-suit']} style={Constants.ZMTMFMFR0}>
                 <img src={suitImagePath} />
             </div>

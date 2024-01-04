@@ -18,7 +18,7 @@ export const Jack = ({ suit }) => {
     };
 
     return (
-        <SuitCard suit={suit} value={"J"} style={Constants.color333} suitCardStyle={jackStyle}>
+        <SuitCard suit={suit}  value={"J"} style={Constants.color333} suitCardStyle={jackStyle}>
         </SuitCard>
     )
 }

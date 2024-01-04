@@ -16,6 +16,7 @@ function App() {
     <Fragment>
       <h3> Some cards</h3>
       <Ace suit="club" />
+      <Ace suit="club" />
       <Two suit="heart" />
       <Three suit="spade" />
       <Four suit="diamond" />
@@ -37,6 +38,7 @@ function App() {
       {getCard("jc")}
       {getCard("12s")}
       {getCard("kh")}
+      {getCard("ah")}
       <h3> The full deck!</h3>
       <FullDeck />
     </Fragment>

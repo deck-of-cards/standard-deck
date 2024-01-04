@@ -16,7 +16,7 @@ export const King = ({ suit }) => {
         backgroundImage: `url(${kingImagePath})`,
     };
     return (
-        <SuitCard suit={suit} value={"K"} style={Constants.color333} suitCardStyle={kingStyle}>
+        <SuitCard suit={suit}  value={"K"} style={Constants.color333} suitCardStyle={kingStyle}>
         </SuitCard>
     )
 }

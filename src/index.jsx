@@ -17,5 +17,6 @@ import { ASuit } from './components/ASuit.jsx';
 import { FullDeck } from './components/FullDeck.jsx';
 
 import { getCard } from './functions/getCard.jsx';
+import { generateUUID } from './functions/getUUID.jsx';
 
-export { Back, Joker, Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King, ASuit, getCard, FullDeck};
+export { Back, Joker, Ace, Two, Three, Four, Five, Six, Seven, Eight, Nine, Ten, Jack, Queen, King, ASuit, getCard, generateUUID, FullDeck};
