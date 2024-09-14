@@ -1,10 +1,15 @@
 @import '../inter/inter.css';
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Satoshi', 'Inter', sans-serif;
   margin: 0;
   font-size: 0;
   background-color: #ddd;
+}
+
+.cards {
+  width: 1100px;
+  height: 700px;
 }
 
 .card {
@@ -12,7 +17,6 @@ body {
   display: inline-block;
   width: 100px;
   height: 140px;
-  margin: 8px;
   background-color: #fff;
 }
 
@@ -29,21 +33,23 @@ body {
   left: 0;
 }
 
-.card-corner .card-suit, .card-corner .card-rank {
+.card-corner .card-suit,
+.card-corner .card-rank {
   width: 18px;
   text-align: center;
   display: block;
 }
 
 .card-corner .card-suit {
-  margin-left: 0.5px;
+  margin-left: 0px;
+  margin-top: -1px;
 }
 
 .card-rank {
   font-size: 16px;
   padding-top: 2px;
   font-weight: 600;
-  letter-spacing: -1.75px; 
+  letter-spacing: -0.5px;
 }
 
 .card-back {
@@ -60,7 +66,7 @@ body {
 }
 
 .card-corner .card-suit img {
-  height: 12px;
+  height: 13px;
 }
 
 .card-middle {
@@ -82,6 +88,17 @@ body {
   background-size: 75%;
 }
 
+.card-royal-suit {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.card-royal-suit img {
+  height: 64px;
+}
+
 .card-joker .card-royal {
   background-position: 60% 50%;
 }
@@ -91,7 +108,7 @@ body {
 }
 
 .card-a .card-middle .card-suit img {
-  height: 30px;
+  height: 36px;
 }
 
 .card-middle .card-suit img {

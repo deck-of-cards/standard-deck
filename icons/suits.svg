@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://web.resource.org/cc/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://inkscape.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   sodipodi:docname="Anglo-American_card_suits.svg"
+   sodipodi:docbase="/home/silsor/graphics/mine"
+   inkscape:version="0.42+devel"
+   sodipodi:version="0.32"
+   id="svg1326"
+   height="792.00000pt"
+   width="612.00000pt">
+  <defs
+     id="defs3" />
+  <sodipodi:namedview
+     inkscape:grid-bbox="false"
+     gridtolerance="2.0000000px"
+     gridoriginx="0.0000000in"
+     gridoriginy="0.0000000in"
+     gridspacingx="0.50000000in"
+     gridspacingy="0.50000000in"
+     inkscape:grid-points="false"
+     showgrid="false"
+     inkscape:window-y="0"
+     inkscape:window-x="0"
+     inkscape:window-height="880"
+     inkscape:window-width="1280"
+     inkscape:current-layer="layer1"
+     inkscape:document-units="in"
+     inkscape:cy="491.45341"
+     inkscape:cx="513.21983"
+     inkscape:zoom="0.49497475"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     borderopacity="1.0"
+     bordercolor="#666666"
+     pagecolor="#ffffff"
+     id="base"
+     showguides="true"
+     inkscape:guide-bbox="true" />
+  <metadata
+     id="metadata4">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Anglo-American card suits</dc:title>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Jeff Bonham</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <cc:license
+           rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/" />
+        <dc:description>Anglo-American card suits: clubs, diamonds, hearts and spades.  Created in Inkscape.</dc:description>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>anglo-american</rdf:li>
+            <rdf:li>cards</rdf:li>
+            <rdf:li>club</rdf:li>
+            <rdf:li>clubs</rdf:li>
+            <rdf:li>diamond</rdf:li>
+            <rdf:li>diamonds</rdf:li>
+            <rdf:li>heart</rdf:li>
+            <rdf:li>hearts</rdf:li>
+            <rdf:li>spade</rdf:li>
+            <rdf:li>spades</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+        <dc:source>http://commons.wikimedia.org/wiki/Image:Anglo-American_card_suits.svg</dc:source>
+      </cc:Work>
+      <cc:License
+         rdf:about="http://creativecommons.org/licenses/by-sa/2.0/">
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Reproduction" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/Distribution" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Notice" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/Attribution" />
+        <cc:permits
+           rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+        <cc:requires
+           rdf:resource="http://web.resource.org/cc/ShareAlike" />
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     inkscape:groupmode="layer"
+     inkscape:label="Layer 1">
+    <path
+       sodipodi:nodetypes="czcccczczc"
+       id="rect3667"
+       d="M 187.18045,250.38730 C 128.36658,222.29272 41.853278,255.80409 62.322215,331.39938 C 82.269329,405.06756 168.41270,388.90088 198.20103,344.05774 C 185.77375,429.08303 163.94868,442.32009 150.86716,460.77780 L 289.75116,460.77780 C 275.67939,441.03877 250.12745,429.08303 235.14277,342.89250 C 265.15914,387.66013 355.39576,403.17960 375.05465,330.57583 C 394.39333,259.15484 307.22109,218.48147 249.25365,250.81326 C 304.83892,213.48768 324.80092,90.899734 219.52258,90.899734 C 113.20501,90.899734 130.94375,215.88446 187.18045,250.38730 z "
+       style="color:#000000;fill:#000000;fill-opacity:1.0000000;fill-rule:nonzero;stroke:#000000;stroke-width:1.8109370;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4.0000000;stroke-dashoffset:0.0000000;stroke-opacity:1.0000000;marker:none;marker-start:none;marker-mid:none;marker-end:none;visibility:visible;display:block;overflow:visible" />
+    <path
+       style="fill:#000000;fill-opacity:1.0000000;fill-rule:evenodd;stroke:#000000;stroke-width:0.85576210pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000"
+       d="M 462.29467,664.32769 C 340.21427,789.05002 459.88654,879.51934 556.40862,819.97420 C 538.18368,884.94243 528.16121,890.05448 517.09667,907.16383 L 621.31128,907.16383 C 607.93386,889.88674 593.88510,884.94243 579.65132,820.34400 C 678.19802,876.95357 782.06120,778.23048 672.71168,664.32769 C 601.19699,601.77310 573.43245,544.66342 567.50319,536.55402 C 561.81398,543.31064 528.29518,602.93370 462.29467,664.32769 z "
+       id="path2076"
+       sodipodi:nodetypes="cccccccc" />
+    <path
+       sodipodi:nodetypes="ccccccccccccccccccccc"
+       id="path30"
+       d="M 216.50043,906.61239 C 216.15723,905.99414 214.68176,901.52418 213.22160,896.67911 C 203.96781,865.97319 186.78919,834.88002 158.02135,796.76700 C 147.21332,782.44803 137.04027,769.76836 109.53195,736.32989 C 77.680663,697.61227 68.557087,685.20914 59.344127,668.10174 C 53.903664,657.99946 48.265682,642.62811 46.410340,632.83915 C 44.556056,623.05587 44.525826,607.07238 46.345850,598.74964 C 53.749127,564.89549 83.820561,539.35493 119.77880,536.38086 C 160.97167,532.97385 196.01144,553.78323 214.42221,592.58758 L 218.53337,601.25265 L 221.62754,594.40729 C 226.22517,584.23584 230.65291,577.35650 238.12646,568.77315 C 257.15444,546.91951 279.80001,536.21452 307.08088,536.17707 C 319.30086,536.16032 326.30318,537.17456 336.71630,540.46962 C 352.29024,545.39773 364.01387,553.07492 374.45497,565.18276 C 401.66486,596.73613 398.44315,639.72269 364.92253,692.37036 C 357.10321,704.65146 342.99490,722.82236 323.59258,745.60159 C 301.24949,771.83343 290.33235,785.16501 279.15526,799.86674 C 252.36377,835.10678 234.34536,867.12695 224.43433,897.11016 C 222.92242,901.68408 221.33841,905.94614 220.91430,906.58141 C 219.92943,908.05665 217.31241,908.07502 216.50043,906.61239 z "
+       style="fill:#ff0000;fill-opacity:1.0000000" />
+    <path
+       sodipodi:nodetypes="ccccc"
+       id="path2139"
+       d="M 566.99914,90.003743 C 528.30104,154.40096 484.73668,216.34755 440.47717,275.84350 C 486.82222,335.33946 531.08175,397.28603 566.99914,461.68326 C 604.30691,396.06073 645.09054,333.50148 693.52113,275.84350 C 646.48090,216.34755 603.61174,153.17564 566.99914,90.003743 z "
+       style="fill:#ff0000;fill-opacity:1.0000000;fill-rule:evenodd;stroke:none;stroke-width:1.0000000pt;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1.0000000" />
+  </g>
+</svg>
