@@ -66,7 +66,7 @@ body {
 }
 
 .card-corner .card-suit img {
-  height: 13px;
+  height: 14px;
 }
 
 .card-middle {
@@ -112,7 +112,7 @@ body {
 }
 
 .card-middle .card-suit img {
-  height: 20px;
+  height: 24px;
 }
 
 .card-joker .card-rank {
