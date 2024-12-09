@@ -78,9 +78,9 @@ body {
 .card-middle {
   position: absolute;
   left: 30%;
-  top: 20%;
+  top: 17.5%;
   width: 40%;
-  height: 60%;
+  height: 65%;
 }
 
 /* .card-2, .card-4 {
@@ -136,7 +136,7 @@ body {
 } */
 
 .card-middle .card-suit {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
 }
 
 .card-joker .card-rank {
