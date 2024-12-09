@@ -1,4 +1,4 @@
-const puppeteer = require('puppeteer');
+const puppeteer = require("puppeteer");
 
 (async () => {
   const browser = await puppeteer.launch();
@@ -8,10 +8,10 @@ const puppeteer = require('puppeteer');
   await page.setViewport({
     width: 1100,
     height: 700,
-    deviceScaleFactor: 3
+    deviceScaleFactor: 4,
   });
 
-  const path = 'dist/standard-deck/sprite.jpg';
+  const path = "dist/standard-deck/sprite.jpg";
 
   await page.screenshot({ path });
   console.log(`rendered ${path}`);
