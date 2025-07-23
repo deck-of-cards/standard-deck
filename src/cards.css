@@ -1,11 +1,13 @@
-@import '../inter/inter.css';
+@import "../inter/inter.css";
 
 body {
-  font-family: Inter, -apple-system, BlinkMacSystemFont, "avenir next", avenir, "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto, arial, sans-serif;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "avenir next", avenir,
+    "segoe ui", "helvetica neue", helvetica, Cantarell, Ubuntu, roboto, noto,
+    arial, sans-serif;
   margin: 0;
   font-size: 0;
   background-color: #ddd;
-  font-feature-settings: 'cv01', 'cv03', 'cv04', 'cv09';
+  font-feature-settings: "cv01", "cv03", "cv04", "cv09";
 }
 
 .cards {
@@ -71,8 +73,8 @@ body {
 }
 
 .card-corner .card-suit {
-  font-size: .875rem;
-  margin-top: -0.3125em;
+  font-size: 0.875rem;
+  margin-top: 0;
 }
 
 .card-middle {
@@ -81,6 +83,13 @@ body {
   top: 17.5%;
   width: 40%;
   height: 65%;
+}
+
+.card-suit,
+.card-royal-suit {
+  img {
+    height: 1em;
+  }
 }
 
 /* .card-2, .card-4 {
@@ -99,6 +108,7 @@ body {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: 75%;
+  transform: scale(0.95, 1);
 }
 
 .card-royal-suit {
@@ -106,11 +116,9 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-}
-
-.card-royal-suit {
+  margin-top: 0.15em;
   color: #fff;
-  font-size: 4.75rem;
+  font-size: 4rem;
 }
 
 .card-joker .card-royal {

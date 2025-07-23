@@ -11,8 +11,8 @@
   "author": "Juha Lindstedt",
   "license": "ISC",
   "devDependencies": {
-    "pug": "^2.0.4",
-    "puppeteer": "^2.1.1"
+    "pug": "^3.0.3",
+    "puppeteer": "^24.15.0"
   },
   "dependencies": {},
   "repository": {
