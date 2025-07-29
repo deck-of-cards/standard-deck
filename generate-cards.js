@@ -12,13 +12,13 @@ const suitSymbols = {
 const suits = "spade heart club diamond".split(" ");
 const colors = "black red".split(" ");
 const ranks = "a 2 3 4 5 6 7 8 9 10 j q k".split(" ").concat("joker");
-const printedRanks = "A 2 3 4 5 6 7 8 9 10 J Q K"
+const printedRanks = "A 2 3 4 5 6 7 8 9 I0 J Q K"
   .split(" ")
   .concat("J\nO\nK\nE\nR");
 
 const hexColors = {
-  red: "#c22",
-  black: "#333",
+  red: "hsl(0, 75%, 50%)",
+  black: "hsl(0, 0%, 15%)",
 };
 
 const cards = new Array(54);

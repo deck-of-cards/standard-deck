@@ -11,7 +11,7 @@ const puppeteer = require("puppeteer");
     deviceScaleFactor: 4,
   });
 
-  const path = "dist/standard-deck/sprite.jpg";
+  const path = "dist/standard-deck/sprite.png";
 
   await page.screenshot({ path });
   console.log(`rendered ${path}`);
